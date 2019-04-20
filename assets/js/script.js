@@ -1,5 +1,4 @@
 $(function () {
-
     function backgroundParallax(nbrPxScroll) {
         $('#wallpaper').css('top', -(nbrPxScroll * 0.25) + 'px');
     }

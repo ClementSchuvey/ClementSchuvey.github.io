@@ -21,6 +21,8 @@ body {
     margin-top: 1rem;
     padding: 1rem;
     font-size: 150%;
+    border: 10px solid rgba(0, 107, 123, 1);
+    border-radius: 50% 20% / 20% 50%;
 }
 
 /* HEADER */
@@ -133,6 +135,7 @@ body {
 #elementForStickInHeader{
   width: 10px;
   height:50px;
+  margin-top:-20px;
   background-color: #EEEEEE;
 }
 .elementListFormation {
@@ -293,13 +296,14 @@ body {
 /* EXPERIENCE */
 #listeExpComputer {
     padding-right: 40px;
-    list-style:none;
-    margin-bottom:0;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: -1rem;
 }
 
 #elementListeExpLegend {
     border-right: 10px solid #EEEEEE;
-    padding-top: 1rem;
+    padding-top: 2rem;
     height:150px;
 }
 #legendExpComputer {
@@ -382,11 +386,9 @@ body {
 }
 
 #legendExpPhone {
-    margin: 1rem 0;
+    margin: 1rem;
     padding: 1rem;
-    background-color: #18181b;
-    border-top: 5px solid #EEEEEE;
-    border-bottom: 5px solid #EEEEEE;
+    background-color: rgba(27, 27, 24, 0.9);
 }
 #legendExpPhone > p {
     margin: 0px;
@@ -416,4 +418,30 @@ body {
 #carouselHobbies {
     padding-bottom:2rem;
     background-color: #18181b;
+}
+
+#imgloadPage {
+    z-index: 10001;
+    position: fixed;
+    width: 300px;
+    display: block;
+    margin-left: calc(50% - 150px);
+    margin-top: calc(50% - 300px);
+}
+#panelUp {
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    background-color: #18181b;
+    z-index: 10000;
+    transition-duration: 2s;
+}
+#panelDown {
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background-color: #18181b;
+    z-index: 10000;
+    transition-duration: 2s;
 }
