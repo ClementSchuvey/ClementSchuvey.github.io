@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "tâche-json1",
+      "appliesTo": "assets/data/json1.json",
+      "type": "launch"
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+
+body {
+    font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+    color: #EEEEEE;
+    padding-bottom: 5rem;
+}
+#wallpaper {
+    background: url('../img/backgroundBambou.jpg') repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 500%;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+.titleSection {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0, 139, 123, 0.9);
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 150%;
+}
+
+/* HEADER */
+#header {
+    background-color: #18181b;
+    padding-bottom: 1rem;
+}
+#name{
+  font-size: 250%;
+}
+#profilPicture {
+    margin-top:2rem;
+    border: 10px solid #EEEEEE;
+    width:100%;
+}
+#contact{
+  font-size : 150%;
+}
+.pictureSocial{
+  height: 50px;
+  width: 50px;
+}
+
+/* NAVIGATION */
+#navigation{
+	top:0;
+    z-index:1000;
+}
+#borderNav { 
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid #18181b;
+}
+.elementNav {
+    height: 50px;
+    font-size: 150%;
+    background-color: #18181b;
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 5px 0;
+}
+.elementNav:hover {
+    background-color: #2f2f2f;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+#buttonNavList {
+    padding-top:10px;
+    height:100px;
+    font-size: 250%;
+    border-top: 10px solid #EEEEEE;
+    border-bottom: 10px solid #EEEEEE;
+    z-index: 2000;
+}
+.navListArrowDown, .navListArrowUp {
+    margin-top: 20px;
+    width: 0px;
+    height: 0px;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    
+}
+.navListArrowDown {
+    border-top: 20px solid #EEEEEE;
+}
+.navListArrowUp {
+    border-bottom: 20px solid #EEEEEE;
+}
+#navList {
+    line-height: 75px;
+    vertical-align: middle;
+    position:absolute;
+    margin-top:100px;
+    z-index:1;
+} 
+.elementNavList {
+    background-color: #18181b;
+    font-size: 200%;
+    color: #EEEEEE;
+    border-bottom:3px solid #EEEEEE;
+}
+.elementNavList:hover {
+    background-color: #2f2f2f;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+/* FOOTER */
+#footer {
+    background-color: #18181b;
+    bottom: 0;
+    position:fixed;
+    z-index:1000;
+}
+.pictureSocialFooter {
+    height: 25px;
+    width: 25px;
+}
+#footer > div > div > img{
+    width:20px;
+    height:20px;
+}
+
+
+/* FORMATION */
+#listFormation {
+    list-style: none;
+    margin-bottom: 0px;
+}
+#elementForStickInHeader{
+  width: 10px;
+  height:50px;
+  background-color: #EEEEEE;
+}
+.elementListFormation {
+    border-left: 10px solid #EEEEEE;
+    padding-bottom: 20px;
+}
+.elementListFormation::before{
+  width: 20px;
+  height: 20px;
+  content: '';
+  position: absolute;
+  background-color: #EEEEEE;
+  margin-left: -15px;
+}
+.elementFormationComputer {
+    padding: 10px;
+    background-color: rgba(0, 139, 123, 0.9);
+    margin-left: 40px;
+    margin-right: 10px;
+    font-size: 150%;
+    display: inline-block;
+}
+.elementFormationComputer::before {
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: -30px;
+        margin-top: -10px;
+        content: '';
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 20px solid rgba(0, 139, 123, 0.9);
+    }
+
+#formationPhone{
+    margin-top:20px;
+}
+.fromFormation {
+    float: right;
+}
+.nameFormation, .nameDiplome {
+    margin: 0px;
+}
+.descripFormation, .descripDiplome {
+    margin-left: 10px;
+}
+.elementFormationPhone {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 139, 123, 0.9);
+    font-size: 200%;
+}
+
+/* COMPETENCE */
+#navSkillComputer {
+    background-color: #2f2f2f;
+    font-size: 150%;
+    height: 50px;   
+}
+.elementNavSkill {
+    padding: 5px 0;
+}
+.elementNavSkill:hover {
+    text-decoration: underline;
+}
+.bordeNavSkill {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    border-top: 50px solid transparent;
+    margin-top: -5px;
+}
+#bordeNavSkillDev, #bordeNavSkillInfoTwo {
+    right: 0;
+    margin-right: -50px;
+    border-left: 50px solid #18181B;
+}
+#bordeNavSkillGen , #bordeNavSkillInfoOne {
+    left: 0;
+    margin-left: -50px;
+    border-right: 50px solid #18181B;
+}
+.elementNavSkillPhone {
+    border-bottom: 2.5px solid #EEEEEE;
+    border-top: 2.5px solid #EEEEEE;
+    background-color: #2f2f2f;
+    font-size: 220%;
+    height: 80px;
+    padding: 10px 0;
+}
+.navSkillArrowDown, .navSkillArrowUp {
+    position:absolute;
+    right:10%;
+    margin-top:-30px;
+    width: 0px;
+    height: 0px;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+.navSkillArrowDown {
+    border-top: 15px solid #EEEEEE;
+}
+.navSkillArrowUp {
+    border-bottom: 15px solid #EEEEEE;
+    display:none;
+}
+
+#skill{
+    background-color:#18181b;
+}
+.skillCard {
+    transition-duration: 500ms;
+    padding: 1rem;
+}
+.skillCardInside {
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    padding:1rem;
+}
+.imgSkill {
+    height: 35px;
+}
+.typeSkill {
+    height: 30px;
+}
+.nameSkill{
+    font-size: 150%;
+    height:50px;
+    margin-bottom:1rem;
+}
+.descripElementSkill {
+    font-size: 18px;
+}
+.progressBar {
+    height: 25px;
+    padding: 2.5px 0;
+}
+.informationSkill{
+    font-size:120%;
+}
+.elementProgressBar {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #EEEEEE;
+    float: right;
+}
+.learnMoreSkill:hover,.learnLessSkill:hover{
+    text-decoration-line:underline;
+}
+.generalSkill {
+    text-align: center;
+    margin-top: 1rem;
+    font-size:120%;
+}
+
+/* EXPERIENCE */
+#listeExpComputer {
+    padding-right: 40px;
+    list-style:none;
+    margin-bottom:0;
+}
+
+#elementListeExpLegend {
+    border-right: 10px solid #EEEEEE;
+    padding-top: 1rem;
+    height:150px;
+}
+#legendExpComputer {
+    position:absolute;
+    right: 3rem;
+    padding: 1rem;
+    width: 360px;
+    background-color: #18181b;
+    border: 5px solid #EEEEEE;
+}
+#legendExpComputer > p {
+    margin: 0px;
+}
+.expLegend {
+    height: 20px;
+    width: 20px;
+    border: 3px solid #EEEEEE;
+    float: left;
+    margin-top: 3px;
+}
+
+.typeExpCompagny {
+    background-color: rgba(0, 139, 123, 0.9);
+}
+.typeExpProject {
+    background-color: rgba(0, 107, 123, 0.9);
+}
+.typeExpOther {
+    background-color: rgba(0, 75, 123, 0.9);
+}
+
+.elementListeExp {
+    border-right: 10px solid #EEEEEE;
+    padding: 1rem 0;
+    height:200px;
+}
+.elementListeExp::before {
+    width: 20px;
+    height: 20px;
+    content: '';
+    background-color: #EEEEEE;
+    position: absolute;
+    right:0;
+    margin-right:50px;
+}
+.elementExpComputer {
+    font-size: 150%;
+    padding: 1rem;
+    margin-right: 40px;
+    margin-left: 10px;
+    float:right;
+    display:inline-block
+
+}
+.elementExpComputer::before {
+    width: 0px;
+    height: 0px;
+    content: '';
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    float:right;
+    margin-right:-35px;
+    margin-top:-1rem;
+}
+.typeExpCompagny::before {
+    border-left: 20px solid rgba(0, 139, 123, 0.9);
+}
+.typeExpProject::before {
+    border-left: 20px solid rgba(0, 107, 123, 0.9);
+}
+.typeExpOther::before {
+    border-left: 20px solid rgba(0, 75, 123, 0.9);
+}
+
+.descpExp{
+  margin: 0px;
+}
+.dateExp{
+    float:right;
+}
+
+#legendExpPhone {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #18181b;
+    border-top: 5px solid #EEEEEE;
+    border-bottom: 5px solid #EEEEEE;
+}
+#legendExpPhone > p {
+    margin: 0px;
+    font-size:150%;
+    text-align:left;
+}
+#legendExpPhone > .expLegend {
+    width: 30px;
+    height: 30px;
+}
+.elementExpPhone {
+    font-size: 150%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* HOBBIES */
+.imageSlideHobbies{
+    width:100%;
+}
+.descriptionHobbies{
+    color:#EEEEEE;
+    font-size:150%;
+    padding:1rem;
+    height:100%;
+}
+#carouselHobbies {
+    padding-bottom:2rem;
+    background-color: #18181b;
+}
