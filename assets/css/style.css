@@ -162,17 +162,17 @@ body {
     font-size: 150%;
     display: inline-block;
 }
-    .elementFormationComputer::before {
-        position: absolute;
-        width: 0;
-        height: 0;
-        margin-left: -30px;
-        margin-top: -10px;
-        content: '';
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-right: 20px solid rgba(0, 75, 123, 0.9);
-    }
+.elementFormationComputer::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: -30px;
+    margin-top: -10px;
+    content: '';
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid rgba(0, 75, 123, 0.9);
+}
 
 #formationPhone{
     margin-top:20px;
@@ -190,7 +190,7 @@ body {
     width: 100%;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: rgba(0, 139, 123, 0.9);
+    background-color: rgba(0, 75, 123, 0.9);
     font-size: 200%;
 }
 
