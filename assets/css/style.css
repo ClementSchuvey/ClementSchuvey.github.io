@@ -44,6 +44,10 @@ body {
 .pictureSocial{
   height: 50px;
   width: 50px;
+  transition-duration:1s;
+}
+.pictureSocial:hover {
+    transform: rotate(-360deg);
 }
 
 /* NAVIGATION */
