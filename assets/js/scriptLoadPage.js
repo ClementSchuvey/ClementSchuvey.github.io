@@ -8,5 +8,5 @@ function openPanel() {
 }
 setTimeout(function () {
     openPanel();
-}, 2000);
+}, 3000);
 
