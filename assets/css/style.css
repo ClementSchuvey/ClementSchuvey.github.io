@@ -18,7 +18,7 @@ body {
     text-align: center;
     font-weight: bold;
     background-color: rgba(0, 75, 123, 0.9);
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding: 1rem;
     font-size: 200%;
     border: 10px solid rgba(0, 29, 79, 1);
@@ -139,7 +139,7 @@ body {
 #elementForStickInHeader{
   width: 10px;
   height:50px;
-  margin-top:-20px;
+  margin-top:-25px;
   background-color: #EEEEEE;
 }
 .elementListFormation {
