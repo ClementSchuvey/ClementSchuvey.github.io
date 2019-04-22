@@ -20,7 +20,7 @@ body {
     background-color: rgba(0, 75, 123, 0.9);
     margin-top: 1rem;
     padding: 1rem;
-    font-size: 150%;
+    font-size: 250%;
     border: 10px solid rgba(0, 29, 79, 1);
     border-radius: 50% 20% / 20% 50%;
 }
@@ -407,6 +407,7 @@ body {
     font-size: 150%;
     padding: 1rem;
     margin-bottom: 1rem;
+    font-size:200%;
 }
 
 /* HOBBIES */
