@@ -296,7 +296,14 @@ body {
     margin-top: 1rem;
     font-size:120%;
 }
+.imgSkillGen{
+    margin-top:-10px;
 
+    height: 40px;
+}
+.linkDiplomOpquast{
+    color:#EEEEEE;
+}
 /* EXPERIENCE */
 #listeExpComputer {
     padding-right: 40px;
