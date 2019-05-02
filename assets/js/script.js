@@ -148,4 +148,59 @@ $(function () {
         $(this).hide();
         $(this).siblings('.learnMoreSkill').show();
     });
+
+    //v, e, r, t
+    var greenArray = [
+        '#00FF00',
+        '#00FC00',
+        '#00F900',
+        '#00F600',
+        '#00F300',
+        '#00CF00',
+        '#00CC00',
+        '#00C900',
+        '#00C600',
+        '#00C300',
+        '#00C000',
+        '#009F00',
+        '#009C00',
+        '#009900',
+        '#009600',
+        '#009300',
+        '#009000',
+        '#004F00',
+        '#004C00',
+        '#004900',
+        '#004600',
+        '#004300',
+        '#004000'
+    ];
+    var konamiCode = [86, 69, 82, 84],
+    elementkonamiCode = 0;
+    $(window).keydown(function (keyPressUser) {
+        if (keyPressUser.keyCode == konamiCode[elementkonamiCode++]) {
+            if (elementkonamiCode == konamiCode.length) {
+                $('*').each(function () {
+                    var salut = Math.floor(Math.random() * Math.floor(20));
+                    $(this).css('transition-duration', '5s');
+                    $(this).css('background-color', greenArray[salut]);
+                    $(this).css('color', greenArray[salut]);
+                    $(this).css('border-color', greenArray[salut]);
+                    console.log($(this));
+                });
+                elementkonamiCode = 0;
+            }
+        }
+        else {
+            elementkonamiCode = 0;
+        }
+    });
+
+    $('.js-scrollTo').on('click', function () { // Au clic sur un élément
+        var page = $(this).attr('href'); // Page cible
+        var speed = 750; // Durée de l'animation (en ms)
+        $('html, body').animate({ scrollTop: $(page).offset().top }, speed); // Go
+        return false;
+    });
+
 });

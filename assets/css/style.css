@@ -25,7 +25,6 @@ body {
     border-radius: 50% 20% / 20% 50%;
 }
 
-
 /* HEADER */
 #header {
     background-color: #18181b;
@@ -37,7 +36,7 @@ body {
 #profilPicture {
     margin-top:2rem;
     border: 10px solid #EEEEEE;
-    width:100%;
+    width:150px;
 }
 #contact{
   font-size : 150%;
@@ -433,9 +432,7 @@ body {
     background-color: #18181b;
 }
 
-
-
-
+/* CHARGEMENT */
 #imgloadPage {
     z-index: 10001;
     width: 50%;
